@@ -20,5 +20,5 @@ def average_gpa_for_9th_grade
   @total = "SELECT SUM(gpa) FROM students;"
   @ninth = "SELECT COUNT(grade) FROM students WHERE grade = 9"
 
-  @total.to_i / @ninth.count.to_i
+  @total / @ninth.count
 end
