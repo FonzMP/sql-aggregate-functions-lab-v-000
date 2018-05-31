@@ -19,7 +19,4 @@ end
 def average_gpa_for_9th_grade
   @total = "SELECT SUM(gpa) FROM students;"
   @ninth = "SELECT COUNT(*) FROM students WHERE grade = 9"
-
-  puts @total
-  puts @ninth
 end
