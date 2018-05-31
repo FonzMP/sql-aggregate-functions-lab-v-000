@@ -18,4 +18,5 @@ end
 
 def average_gpa_for_9th_grade
   @total = "SELECT SUM(gpa) FROM students;"
+  @length = "SELECT COUNT(name) FROM students;"
 end
